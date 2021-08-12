@@ -51,6 +51,7 @@ steps:
         - kill $(cat ./pid.file)
         - java -cp chart-1.0-SNAPSHOT.jar B.BroadcastServer& echo $! > ./pid.file &
         - echo ====部署成功======
+        - 
 trigger:
   branch:
     - master
